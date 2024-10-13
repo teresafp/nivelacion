@@ -2,72 +2,52 @@
 <html lang="es">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>APP TODOLIST</title>
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <link rel="stylesheet" href="style.css">
     </head>
-    <img>
+    <body>
         <h1>TODOLIST</h1>
-        <h2>Nueva tarea</h2>
-        <form  action="">
-
-            <label for="description">Escribe la descripción de la tarea</label><br/>
-            <textarea name="" id="" placeholder="Esto es un textarea" name="description">Hola estoy aquí</textarea><br/>
-
-
-            <label>Fecha límite</label><br/>
-            <input type="date" name="" id="" /><br/>
-
-            <button>INSERTAR</button>
+        <h2>Nueva Tarea</h2>
+        <form id='taskForm' action="">
+            <label for="description">Escribe la descripción de la tarea</label>
+            <textarea name="" id="description" placeholder="Esto es un textarea">Nueva tarea</textarea>
+            <label>Fecha límite</label>
+            <input type="date" name="" id="dueDate">
+            <button type="submit">INSERTAR</button>
         </form>
         <h2>Tareas</h2>
+        <div class="tasks">
+            <div class="listItem">
+                <p>Preparar la clase de Nuclio Full Stack Developer</p>
+                <p><span class="inProgress">IN PROGRESS</span> Fecha límite: 31OCT</p>
 
-        <p>Preparar la clase de <strong>Nuclio</strong> Full Stack Developer</p>
-        <p>IN PROGRESS Fecha límite: 25JUN</p>
+                <p>
+                    <a href="" id="editButton">Editar</a>
+                    <a href="">Marcar como finalizada</a>
+                    <a href="" class="delete">Eliminar</a>     
+                </p>
+            </div>
+            <div class="listItem">
+                <p>Hacer la clase de Nuclio Full Stack Developer</p>
+                <p><span class="toDo">TO DO</span> Fecha límite: 15NOV</p>
 
-        <p>
-            <a href="">EDITAR</a>
-            <a href="">MARCAR COMO FINALIZADA</a>
-            <a href="">ELIMINAR</a>
-        </p>
+                <p>
+                    <a href="">Editar</a>
+                    <a href="">Marcar como finalizada</a>
+                    <a href="" class="delete">Eliminar</a>     
+                </p>
+            </div>
+            <div class="listItem">
+                <p>Preparar la clase de Nuclio Full Stack Developer</p>
+                <p><span class="Done">DONE</span> Fecha límite: 10OCT</p>
 
-        <table border="1">
-            <tr>
-                <td><img src="https://images.pexels.com/photos/3608263/pexels-photo-3608263.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" width="120"></td>
-                <td><img src="https://images.pexels.com/photos/3608263/pexels-photo-3608263.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" width="120"></td>
-                <td><img src="https://images.pexels.com/photos/3608263/pexels-photo-3608263.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" width="120"></td>
-                <td><img src="https://images.pexels.com/photos/3608263/pexels-photo-3608263.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" width="120"></td>
-                <td><img src="https://images.pexels.com/photos/3608263/pexels-photo-3608263.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" width="120"></td>
-            </tr>
-        </table>
-
-        <h2>Cosas a comprar</h2>
-
-        <ul>
-            <li>Pan</li>
-            <li>Leche</li>
-            <li>Cereales</li>
-        </ul>
-
-        <ol>
-            <li>Granadas</li>
-            <li>Plátanos</li>
-            <li>Granadas</li>
-            <li>Plátanos</li>
-        </ol>
-
-        <dl>
-            <dt>El padrino</dt>
-            <dd>Dirigida por Martin Scorsese</dd>
-            <dt>Una noche en el museo</dt>
-            <dd>Dirigida por Adam Sandler</dd>
-        </dl>
-
-        <dl>
-            <dt>¿Quiénes somos?</dt>
-            <dd>Somos un equipo super chachi</dd>
-            <dt>¿Dónde estamos?</dt>
-            <dd>En el mundo</dd>
-        </dl>    
-
+                <p>
+                    <a href="">Editar</a>
+                    <a href="">Marcar como finalizada</a>
+                    <a href="" class="delete">Eliminar</a>     
+                </p>
+            </div>
+        </div>
+    <script src="index.js"></script>
     </body>
 </html>
